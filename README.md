@@ -42,7 +42,7 @@ def generate_password():
     characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
     password = ''.join(random.choice(characters) for _ in range(12))
     return f'''
-    <h2>Случайный пароль: {password}</h2>
+    <h2>Ваш случайный пароль: {password}</h2>
     <a href="/">Назад на главную</a>
     '''
 
@@ -50,14 +50,14 @@ def generate_password():
 def random_number():
     number = random.randint(1, 100)
     return f'''
-    <h2>Случайное число: {number}</h2>
+    <h2>Ваше случайное число: {number}</h2>
     <a href="/">Назад на главную</a>
     '''
 
 @app.route("/about")
 def about():
     return '''
-    <h2>ПРИВЕТ Я УЧЕНИК 9-ГО КЛАССА!</h2>
+    <h2>ПРИВЕТ,КАК ТВОИ ДЕЛА?!</h2>
     <a href="/">Назад на главную</a>
     '''
 
